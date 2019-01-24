@@ -1,0 +1,26 @@
+@import "~breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "~include-media/dist/include-media";
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+$breakpoints: (
+  small : 306px,
+	medium : 610px,
+	large : 932px,
+);
+
+$header-height : 42px;
+$color-normal : #ff5c3e;

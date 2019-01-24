@@ -1,0 +1,6 @@
+.List {
+	width : 930px;
+	@include media("<large"){
+		width : 620px;
+	}
+}

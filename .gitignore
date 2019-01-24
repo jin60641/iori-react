@@ -1,6 +1,13 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+  
+# vi swap
+*.swp
+
+# vi swap
+*.swp 
 
 # dependencies
+server/node_modules
 /node_modules
 
 # testing
@@ -19,3 +26,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/server/config
+
+files
+tmp

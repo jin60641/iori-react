@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "react-app",
+  ],
+  "globals": {
+    "window": true,
+    "document": true,
+    "alert": true,
+    "Event": true
+  },
+  "rules": {
+    "no-shadow": 0,
+    "no-unused-vars": 0,
+    "no-console": 1,
+    "max-len": 0,
+    "jsx-quotes": [2, "prefer-single"],
+    "react/destructuring-assignment": 1,
+    "react/jsx-filename-extension": 0,
+    "object-shorthand": [2, "always"],
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+    ],
+    "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
+    "react/forbid-prop-types": 0,
+    "react/prop-types": 0,
+    "prefer-destructuring": 0,
+
+    "import/no-unresolved": [
+      0,
+      { "ignore": ["^components", "^actions"] }
+    ],
+    "import/no-named-as-default": 0,
+    "import/no-extraneous-dependencies": [0],
+    "import/extensions": [0],
+  }
+}
